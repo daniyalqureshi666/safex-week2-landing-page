@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      SafeX Solutions | Vulnerability Assessment &amp; Penetration Testing
+      (VAPT)
+    </title>
+    <meta
+      name="description"
+      content="SafeX Solutions delivers professional Vulnerability Assessment and Penetration Testing (VAPT) services — manual and automated security testing for web, mobile, network, API, and cloud environments."
+    />
+
+    <!-- Favicon: swap this placeholder for SafeX's official favicon file -->
+    <link
+      rel="icon"
+      href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=422,fit=crop/eUupwZ9hEhwAIGKT/safex-complete-png-Cx0EXaKvczVUzyaf.png"
+      type="image/png"
+    />
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ============ Google Analytics (GA4) ============ -->
+    <!-- Replace G-XXXXXXXXXX with your real Measurement ID from analytics.google.com -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ============ Header / Navigation ============ -->
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a
+          class="brand"
+          href="#home"
+          aria-label="SafeX Solutions — go to home section"
+        >
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=422,fit=crop/eUupwZ9hEhwAIGKT/safex-complete-png-Cx0EXaKvczVUzyaf.png"
+            alt="SafeX Solutions Logo"
+            class="brand-logo"
+            width="160"
+            height="40"
+          />
+        </a>
+
+        <ul class="nav-list" id="nav-links">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li><a class="nav-link" href="#process">Process</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="btn-cta" href="#contact">Book Assessment</a>
+
+        <button
+          class="mobile-toggle"
+          id="mobile-menu-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+
+        <ul class="mobile-menu" id="mobile-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li><a class="nav-link" href="#process">Process</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============ Hero / Home ============ -->
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <div class="container hero-inner">
+          <div class="reveal active">
+            <h1
+              class="hero-title"
+              id="hero-heading"
+              data-variant-a="Protect Your Business Before Attackers Find the Weaknesses"
+              data-variant-b="Find Your Vulnerabilities Before Hackers Do — Free Scan Included"
+            >
+              Protect Your Business Before Attackers Find the Weaknesses
+            </h1>
+            <p
+              class="hero-text"
+              data-variant-a="Comprehensive Vulnerability Assessment and Penetration Testing (VAPT) from SafeX Solutions to fortify your digital perimeter and support your compliance goals."
+              data-variant-b="Get a certified VAPT report in days, not weeks. SafeX Solutions combines automated scanning with manual expert testing so nothing critical slips through."
+            >
+              Comprehensive Vulnerability Assessment and Penetration Testing
+              (VAPT) from SafeX Solutions to fortify your digital perimeter and
+              support your compliance goals.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn-primary-gradient"
+                href="#contact"
+                id="hero-cta"
+                data-variant-a="Book Free Consultation"
+                data-variant-b="Get My Free Vulnerability Scan"
+                >Book Free Consultation</a
+              >
+              <a class="btn-outline-light" href="#services">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-media reveal active">
+            <img
+              class="hero-image"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2KVJYF3mto0Mxh0seAUx_5myQnJ_JY6Lg7Ymzxf55tyJt5Nn9f8OWNCRcEb7ej6O51d8-63jg5vOecL_erqT0yRigocSObSlyX2BKf8E-jENephu55BMj4Smoygrkqm2DqyaiSfpK9Kr_aLJ4-MXOXqi4A_5V0JQjIN95JseNeQqrd1zjU449-Gcl_i6BhixXQMTeljkMJ-_MQpZnnt6KznFm4uKRUuMI_Tlt8hjrDs60DPIbb4"
+              alt="Illustration representing cybersecurity assessment and network protection"
+              loading="eager"
+              width="640"
+              height="480"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ About ============ -->
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <div class="reveal">
+            <span class="eyebrow">Our Expertise</span>
+            <h2 class="section-title" id="about-heading">
+              Deep Defensive Strategy
+            </h2>
+            <p class="about-copy">
+              At SafeX Solutions, our VAPT service goes beyond automated
+              scanning. We simulate real-world cyberattacks to uncover critical
+              vulnerabilities that standard tools often miss. Our approach
+              combines industry-leading technology with manual expert analysis,
+              providing you with a prioritized roadmap for remediation.
+            </p>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >shield_person</span
+              >
+              <h3>100%</h3>
+              <p>Manual Verification</p>
+            </div>
+            <div class="stat-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >gavel</span
+              >
+              <h3>ISO/IEC</h3>
+              <p>Standard-Aligned Methodology</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Services ============ -->
+      <section
+        class="services-section"
+        id="services"
+        aria-labelledby="services-heading"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 class="section-title" id="services-heading">
+              Our VAPT Specialized Ecosystem
+            </h2>
+            <p>
+              Tailored security assessments across your entire technology stack.
+            </p>
+          </div>
+          <ul class="services-grid">
+            <li class="service-card reveal">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >language</span
+                >
+                <h3>Web App Testing</h3>
+                <p>
+                  Identifying OWASP Top 10 vulnerabilities like SQLi, XSS, and
+                  broken authentication.
+                </p>
+              </article>
+            </li>
+            <li class="service-card reveal" style="transition-delay: 100ms">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >smartphone</span
+                >
+                <h3>Mobile Security</h3>
+                <p>
+                  In-depth analysis of Android and iOS apps, including reverse
+                  engineering and API security.
+                </p>
+              </article>
+            </li>
+            <li class="service-card reveal" style="transition-delay: 200ms">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >hub</span
+                >
+                <h3>Network Audits</h3>
+                <p>
+                  Probing internal and external network infrastructure for
+                  misconfigurations and flaws.
+                </p>
+              </article>
+            </li>
+            <li class="service-card reveal" style="transition-delay: 300ms">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >api</span
+                >
+                <h3>API Pen-Testing</h3>
+                <p>
+                  Securing the endpoints that connect your modern microservices
+                  architecture.
+                </p>
+              </article>
+            </li>
+            <li class="service-card reveal" style="transition-delay: 400ms">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >cloud</span
+                >
+                <h3>Cloud Defense</h3>
+                <p>
+                  Auditing AWS, Azure, and GCP configurations to prevent data
+                  leaks and unauthorized access.
+                </p>
+              </article>
+            </li>
+            <li class="service-card reveal" style="transition-delay: 500ms">
+              <article>
+                <span
+                  class="material-symbols-outlined service-icon"
+                  aria-hidden="true"
+                  >settings_input_antenna</span
+                >
+                <h3>Wireless Security</h3>
+                <p>
+                  Testing Wi-Fi networks and Bluetooth protocols for
+                  unauthorized entry points.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ Benefits ============ -->
+      <section
+        class="benefits-section"
+        id="benefits"
+        aria-labelledby="benefits-heading"
+      >
+        <div class="container">
+          <h2
+            class="section-title benefits-heading reveal"
+            id="benefits-heading"
+          >
+            Why Clients Choose SafeX
+          </h2>
+          <div class="benefits-grid reveal">
+            <div class="benefit-card-large">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >verified</span
+              >
+              <div>
+                <h3>Experienced Professionals</h3>
+                <p>
+                  A dedicated team with hands-on experience in high-stakes
+                  cybersecurity engagements.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >psychology</span
+              >
+              <h3>Expert Manual Analysis</h3>
+            </div>
+            <div class="benefit-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >visibility</span
+              >
+              <h3>Low False-Positive Rate</h3>
+            </div>
+            <div class="benefit-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >history</span
+              >
+              <h3>Historical Benchmarking</h3>
+            </div>
+            <div class="benefit-card">
+              <span class="material-symbols-outlined" aria-hidden="true"
+              >assignment</span
+              >
+              <h3>Actionable Reports</h3>
+            </div>
+            <div class="benefit-card-large accent">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >monitoring</span
+              >
+              <div>
+                <h3>Real-Time Dashboard</h3>
+                <p>
+                  Monitor your security posture with our reporting platform
+                  throughout the engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Process ============ -->
+      <section
+        class="process-section"
+        id="process"
+        aria-labelledby="process-heading"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <h2 class="section-title" id="process-heading">
+              Our 8-Step VAPT Process
+            </h2>
+            <p>Structured precision from first contact to final retest.</p>
+          </div>
+          <ol class="process-list">
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">1</div>
+              <h3>Requirement Gathering</h3>
+              <p>
+                Understanding your environment, goals, and compliance needs.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">2</div>
+              <h3>Scope Definition</h3>
+              <p>
+                Defining testing boundaries, in-scope systems, and rules of
+                engagement.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">3</div>
+              <h3>Information Gathering</h3>
+              <p>Reconnaissance and footprinting of target systems.</p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">4</div>
+              <h3>Vulnerability Assessment</h3>
+              <p>
+                Automated identification of known vulnerabilities and
+                misconfigurations.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">5</div>
+              <h3>Manual Penetration Testing</h3>
+              <p>
+                Human-led exploitation of critical paths to validate real-world
+                risk.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">6</div>
+              <h3>Risk Analysis</h3>
+              <p>
+                Assessing the business impact and severity of confirmed
+                findings.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">7</div>
+              <h3>Report &amp; Remediation</h3>
+              <p>
+                Delivering a clear, prioritized roadmap for fixing identified
+                issues.
+              </p>
+            </li>
+            <li class="process-step reveal">
+              <div class="step-number" aria-hidden="true">8</div>
+              <h3>Retesting &amp; Verification</h3>
+              <p>
+                Confirming that remediated vulnerabilities are fully resolved.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ Statistics ============ -->
+      <section class="stats-section" aria-label="Company statistics">
+    <div class="container stats-grid">
+        <div>
+            <div class="stat-number">80+</div>
+            <p class="stat-label">Global Clients</p>
+        </div>
+
+        <div>
+            <div class="stat-number">15+</div>
+            <p class="stat-label">Countries Served</p>
+        </div>
+
+        <div>
+            <div class="stat-number">Expert</div>
+            <p class="stat-label">VAPT Services</p>
+        </div>
+
+        <div>
+            <div class="stat-number">Hybrid</div>
+            <p class="stat-label">• Remote • Onsite Delivery</p>
+        </div>
+    </div>
+
+    <p class="stats-note container">
+        Company information based on publicly available SafeX Solutions details.
+    </p>
+</section>
+
+      <!-- ============ Testimonials ============ -->
+      <section
+        class="testimonials-section"
+        id="testimonials"
+        aria-labelledby="testimonials-heading"
+      >
+        <div class="container">
+          <h2
+            class="section-title testimonials-heading reveal"
+            id="testimonials-heading"
+          >
+            Trusted by Industry Leaders
+          </h2>
+          <div class="testimonials-grid reveal">
+            <blockquote class="testimonial-card">
+              <div class="stars" role="img" aria-label="5 out of 5 stars">
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+              </div>
+              <p class="testimonial-quote">
+                "SafeX uncovered a major API flaw that our previous auditors
+                missed. Their remediation roadmap was incredibly clear."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">JD</div>
+                <div>
+                  <p class="author-name">John Doe</p>
+                  <p class="author-role">
+                    CTO, Fintech Corp
+                    <span class="placeholder-tag">(sample)</span>
+                  </p>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="stars" role="img" aria-label="5 out of 5 stars">
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+              </div>
+              <p class="testimonial-quote">
+                "The manual testing depth provided by the team was impressive.
+                They are now our go-to partner for all security audits."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">SK</div>
+                <div>
+                  <p class="author-name">Sarah Kim</p>
+                  <p class="author-role">
+                    Security Lead, HealthLink
+                    <span class="placeholder-tag">(sample)</span>
+                  </p>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="stars" role="img" aria-label="5 out of 5 stars">
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined star-filled"
+                  aria-hidden="true"
+                  >star</span
+                >
+              </div>
+              <p class="testimonial-quote">
+                "Clear communication from kickoff to retest. The final report
+                made it easy for our developers to act on every finding."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">AR</div>
+                <div>
+                  <p class="author-name">Ahmed Raza</p>
+                  <p class="author-role">
+                    IT Manager, Retail Group
+                    <span class="placeholder-tag">(sample)</span>
+                  </p>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 class="section-title faq-heading reveal" id="faq-heading">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list" id="faq-list">
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                What is VAPT?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                VAPT (Vulnerability Assessment and Penetration Testing) combines
+                automated scanning with manual, expert-led exploitation to find
+                and validate security weaknesses across your applications,
+                networks, and cloud infrastructure.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                How often should testing be performed?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                We recommend a VAPT at least quarterly, or whenever a major
+                deployment, infrastructure change, or new integration occurs, to
+                stay ahead of evolving threats.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                How long does testing take?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                Timelines depend on scope and complexity. A typical single
+                application or network engagement takes about one to two weeks,
+                from kickoff through the final report.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                Will testing affect production?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                We plan every engagement carefully with you, favoring staging
+                environments where possible, and using controlled, rate-limited
+                testing techniques in production to minimize any risk of
+                disruption.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                Do you provide remediation support?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                Yes. Every report includes a prioritized remediation roadmap,
+                and our team is available to advise your developers during fixes
+                and through the final retest.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                What is the difference between VA and PT?
+                <span
+                  class="material-symbols-outlined faq-icon"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="faq-answer">
+                Vulnerability Assessment (VA) is a scan that identifies known
+                vulnerabilities. Penetration Testing (PT) goes further, actively
+                attempting to exploit those vulnerabilities to show how deep an
+                attacker could realistically go.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Contact ============ -->
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container contact-grid">
+          <div class="reveal">
+            <h2 class="section-title" id="contact-heading">
+              Ready to Secure Your Future?
+            </h2>
+            <p class="about-copy">
+              Get a custom quote or book a complimentary security discovery call
+              with our specialists.
+            </p>
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >mail</span
+                >
+                <a href="mailto:contact@safexsolutions.com"
+                  >contact@safexsolutions.com</a
+                >
+              </li>
+              <li class="contact-info-item">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >call</span
+                >
+                <a href="tel:+923275781580">+92 327 5781580</a>
+              </li>
+              <li class="contact-info-item">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >location_on</span
+                >
+                <span>Wah Cantt, Pakistan</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-card reveal">
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="https://formspree.io/f/xrpzrdrp"
+              method="POST"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-name-error"
+                  />
+                  <span
+                    class="field-error"
+                    id="contact-name-error"
+                    role="alert"
+                  ></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-email-error"
+                  />
+                  <span
+                    class="field-error"
+                    id="contact-email-error"
+                    role="alert"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Company</label>
+                  <input
+                    type="text"
+                    id="contact-company"
+                    name="company"
+                    autocomplete="organization"
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-company-error"
+                  />
+                  <span
+                    class="field-error"
+                    id="contact-company-error"
+                    role="alert"
+                  ></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-service">Service Required</label>
+                  <select
+                    id="contact-service"
+                    name="service"
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-service-error"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="Web VAPT">Web VAPT</option>
+                    <option value="Network Audit">Network Audit</option>
+                    <option value="Cloud Security">Cloud Security</option>
+                    <option value="Full Suite">Full Suite</option>
+                  </select>
+                  <span
+                    class="field-error"
+                    id="contact-service-error"
+                    role="alert"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  aria-required="true"
+                  aria-describedby="contact-message-error"
+                ></textarea>
+                <span
+                  class="field-error"
+                  id="contact-message-error"
+                  role="alert"
+                ></span>
+              </div>
+
+              <p
+                id="contact-form-status"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <button class="btn-submit" type="submit">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand-name">SafeX Solutions</p>
+          <p class="footer-copy">
+            © 2026 SafeX Solutions. All rights reserved.
+          </p>
+        </div>
+
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <a
+  href="https://safexsolutions.com/"
+  aria-label="SafeX Solutions Official Website"
+  target="_blank"
+  rel="noopener"
+>
+  <span class="material-symbols-outlined" aria-hidden="true">public</span>
+</a>
+<a
+  href="mailto:contact@safexsolutions.com"
+  aria-label="Email SafeX Solutions"
+>
+  <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+</a>
+<a
+  href="https://linkedin.com"
+  aria-label="SafeX Solutions on LinkedIn"
+  target="_blank"
+  rel="noopener"
+>
+  <span class="material-symbols-outlined" aria-hidden="true">corporate_fare</span>
+</a>
+
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >verified_user</span
+            >
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
